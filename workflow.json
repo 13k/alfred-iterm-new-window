@@ -1,0 +1,11 @@
+{
+  "id": "com.commita.alfred.iterm-new-window",
+  "name": "Open a new iTerm window",
+  "description": "Opens a new iTerm window",
+  "category": "Productivity",
+  "author": "Kiyoshi '13k' Murata",
+  "url": "http://opensource.commita.com",
+  "icons": {
+    "icon.png": "icons/iterm.png"
+  }
+}

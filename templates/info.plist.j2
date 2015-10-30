@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+    <string>{{ id }}</string>
+	<key>name</key>
+    <string>{{ name }}</string>
+	<key>description</key>
+    <string>{{ description }}</string>
+	<key>category</key>
+    <string>{{ category }}</string>
+	<key>createdby</key>
+    <string>{{ author }}</string>
+	<key>webaddress</key>
+    <string>{{ url }}</string>
+	<key>readme</key>
+    <string>{{ files['README.md'] | cdata }}</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>45</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4DAD3173-1779-4B27-AB08-BA22B2C9699F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+                <string>{{ files['scripts/create_window.applescript'] | cdata }}</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>9D747584-C0FD-439D-ABF1-24E89955BDB5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>connections</key>
+	<dict>
+		<key>4DAD3173-1779-4B27-AB08-BA22B2C9699F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9D747584-C0FD-439D-ABF1-24E89955BDB5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
